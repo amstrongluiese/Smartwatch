@@ -1,0 +1,26 @@
+{
+  "name": "smartwatch-healthkit-capstone",
+  "version": "1.0.0",
+  "description": "Full-stack web application prototype connecting Xiaomi Account via official OAuth and retrieving authorized health data from Xiaomi HealthKit Cloud API",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix server run build && npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "keywords": [
+    "xiaomi",
+    "healthkit",
+    "smart-band-9-active",
+    "capstone",
+    "oauth2",
+    "heart-rate",
+    "spo2"
+  ],
+  "author": "Capstone Research Team",
+  "license": "ISC"
+}
